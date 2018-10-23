@@ -8,6 +8,12 @@ body {
 	align-items: center;
 }
 
+.flexHoriz {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
 .flexCenter {
 	display: flex;
 	justify-content: center;
@@ -15,8 +21,18 @@ body {
 }
 
 .maxWidth {
-	width: 800px;
+	width: 900px;
 }
+
+
+.timelineDate {
+	width: 150px;
+	margin-left: 2em;
+}
+.timelineItem {
+	
+}
+
 
 #topBar {
 	flex: 1 1 50px;

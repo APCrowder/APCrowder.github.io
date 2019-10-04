@@ -9,6 +9,9 @@
 <meta name="author" content="Adrian Crowder">
 
 <link rel="stylesheet" href="styles.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="scrollToAnchor.js"></script>
 	
 <script>
 	window.onload = function() {document.getElementById("year").innerHTML = new Date().getFullYear()};
@@ -20,125 +23,148 @@
   <header id="topBar">
     <h1>Adrian Crowder</h1>
     
-    <nav>
-      
+    <nav class="flexHoriz">
+        <a href="#intro">Intro</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#research_publications">Research & Publications</a>
+        <a href="#personal">Personal Projects</a>
     </nav>
   </header>
   
-  </br>
+    <article id="intro" class="flexVert">
+        <header>
+            <h1>Intro</h1>
+        </header>
+        
+        <section class="maxWidth">
+            <p>While completing a master's degree in earthquake/structural engineering, I gained a passion for creating effective solutions to complex problems. This passion drives me each day to create simple, creative, and efficient solutions to novel challenges.</p>
+        </section>
+    </article>
+    
+    
+    <article id="projects" class="flexVert">
+        <header>
+            <h1>Projects</h1>
+        </header>
+        
+        <section class="maxWidth">
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from articles 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popula.</p>
+            
+            <section class="flexHoriz">
+                <section>
+                    <p></p>
+                </section>
+                <section>
+                    <iframe width="840" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/d/embed?mid=1lJUan9YNVVQomdU3uU7QhTiZXIcF9SBs"></iframe>
+                </section>
+            </section>
+        </section>
+    </article>
+    
+    
+    <article id="experience" class="flexVert">
+        <header>
+            <h1>Experience</h1>
+        </header>
+        
+        <section class="maxWidth">
+            <section class="flexHoriz">
+                <p class="timelineDate">Nov 2016 - Present</p>
+                <section class="timelineItem">
+                    <p class="position">Structural EIT</p>
+                    <p class="company">Bryson Markulin Zickmantel Structural Engineers</p>
+                    <ul class="positionDescription">
+                        <li>Description</li>
+                        <li>Description</li>
+                    </ul>
+                </section>
+            </section>
+            
+            <section class="flexHoriz">
+                <p class="timelineDate">July 2016 - Oct 2016</p>
+                <section class="timelineItem">
+                    <p class="position">Test Rig Designer</p>
+                    <p class="company">McMaster University</p>
+                    <ul class="positionDescription">
+                        <li>Description</li>
+                        <li>Description</li>
+                    </ul>
+                </section>
+            </section>
+            
+            <section class="flexHoriz">
+                <p class="timelineDate">Sept 2014 - Sept 2016</p>
+                <section class="timelineItem">
+                    <p class="position">Teaching Assistant</p>
+                    <p class="company">McMaster University</p>
+                    <ul class="positionDescription">
+                        <li>Description</li>
+                        <li>Description</li>
+                    </ul>
+                </section>
+            </section>
+            
+        </section>
+    </article>
+    
+    
+    <article id="research_publications" class="flexVert">
+        <header>
+            <h1>Research & Publications</h1>
+        </header>
+        
+        
+        <section class="maxWidth">
+            <h2>Topic</h2>
+            <p>Seismic isolation is a method of designing buildings to better withstand earthquakes. The method involves constructing a building on top of many bearings which separate the building from the ground. During an earthquake, these devices prevent violent accelerations from being passed into the building. This in turn prevents damage to the building and the contents inside.</p>
+            <p>Numerous existing buildings have been upgraded with seismic isolation, but the process is often very expensive because of major alterations required at the base of the structure. The focus of my research was to make upgrades with seismic isolation more cost effective by placing the bearings on the tops of columns. This non-traditional placement can mitigate many of the costs traditionally associated with upgrades, but the interaction between the bearing and the column is not well understood. Experimental tests of a bearing connected to a column were performed, and a model was developed to predict the behaviour of the system. The research furthers the understanding of the field and will help designers create more cost effective solutions.</p>
+            
+            <h2>Experimental Work</h2>
+            <p>Experimental testing of 4 subassemblies of a column and bearing were conducted at McMaster University. The test rig was designed and constructed to provide the necessary loads and displacements to the subassembies for testing.</p>
+            <section class="flexCenter">
+                <iframe width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen src="https://player.vimeo.com/video/186521191"></iframe>
+            </section>
+            
+            <h2>Publications</h2>
+            <section class="flexHoriz">
+                <p class="timelineDate">July 2017</p>
+                <p class="timelineItem">Experimental Investigation of Elastomeric Isolation Bearings with Flexible Supporting Columns</br><i>Journal of Structural Engineering</i></p>
+            </section>
+            <section class="flexHoriz">
+                <p class="timelineDate">Jan 2017</p>
+                <p class="timelineItem">Increased Substructure Felxibility of Column-Top Isolation Systems</br><i>16th World Conference on Earthquake Engineering</i></p>
+            </section>
+            <section class="flexHoriz">
+                <p class="timelineDate">June 2016</p>
+                <p class="timelineItem">Effects of Non-Traditional Isolator Placement for Seismic Retrofit</br><i>Canadian Society for Civil Engineering Annual Conference</i></p>
+            </section>
+            <section class="flexHoriz">
+                <p class="timelineDate">July 2015</p>
+                <p class="timelineItem">Preliminary Study on the Behaviour of a Column-Top Isolation System</br><i>11th Canadian Conference on Earthquake Engineering</i></p>
+            </section>
+        </section>
+    </article>
+    
+    
+    
+    <article id="personal" class="flexVert">
+        <header>
+            <h1>Personal Projects</h1>
+        </header>
+        
+        
+        <section class="maxWidth">
+            <p>Core Designer</p>
+            <p>ETABS Results Processor Plugin</p>
+            <p>SAFE Transfer Builder</p>
+            <p>Live Wireless Acceleration</p>
+        </section>
+    </article>
   
-  
-  <article id="intro" class="flexVert">
-	<header>
-		<h1>Intro</h1>
-	</header>
-	
-	<section class="maxWidth">
-		<p>While completing a master's degree in earthquake/structural engineering, I gained a passion for creating effective solutions to complex problems. This passion drives me each day to create simple, creative, and efficient solutions to novel challenges.</p>
-	</section>
-  </article>
-  
-  
-  <article id="projects" class="flexVert">
-	<header>
-		<h1>Projects</h1>
-	</header>
-	
-	<section class="maxWidth">
-		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from articles 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popula.</p>
-		
-		<section class="flexHoriz">
-			<section>
-				<p></p>
-			</section>
-			<section>
-				<iframe width="840" height="500" frameborder="0" style="border:0" src="https://www.google.com/maps/d/embed?mid=1lJUan9YNVVQomdU3uU7QhTiZXIcF9SBs"></iframe>
-			</section>
-		</section>
-	</section>
-  </article>
-  
-  
-  <article id="experience" class="flexVert">
-	<header>
-		<h1>Experience</h1>
-	</header>
-	
-	<section class="maxWidth">
-		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from articles 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popula.</p>
-		<section class="flexHoriz">
-			<p class="timelineDate">November 2016 - Present</p>
-			<section class="timelineItem">
-				<p>Bryson Markulin Zickmantel Structural Engineers</br><i>Structural EIT</i></p>
-				<p>Description</p>
-			</section>
-		</section>
-		<section class="flexHoriz">
-			<p class="timelineDate">September 2014 - April 2016</p>
-			<section class="timelineItem">
-				<p>McMaster University</br><i>Teaching Assistant</i></p>
-				<p>Description</p>
-			</section>
-		</section>
-	</section>
-  </article>
-  
-  
-  <article id="research_publications" class="flexVert">
-	<header>
-		<h1>Research & Publications</h1>
-	</header>
-	
-	
-	<section class="maxWidth">
-		<h2>Topic</h2>
-		<p>Seismic isolation is a method of designing buildings to better withstand earthquakes. The method involves constructing a building on top of many bearings which separate the building from the ground. During an earthquake, these devices prevent violent accelerations from being passed into the building. This in turn prevents damage to the building and the contents inside.</p>
-		<p>Numerous existing buildings have been upgraded with seismic isolation, but the process is often very expensive because of major alterations required at the base of the structure. The focus of my research was to make upgrades with seismic isolation more cost effective by placing the bearings on the tops of columns. This non-traditional placement can mitigate many of the costs traditionally associated with upgrades, but the interaction between the bearing and the column is not well understood. Experimental tests of a bearing connected to a column were performed, and a model was developed to predict the behaviour of the system. The research furthers the understanding of the field and will help designers create more cost effective solutions.</p>
-		
-		<h2>Experimental Work</h2>
-		<p>Experimental testing of 4 subassemblies of a column and bearing were conducted at McMaster University. The test rig was designed and constructed to provide the necessary loads and displacements to the subassembies for testing.</p>
-		<iframe width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen src="https://player.vimeo.com/video/186521191"></iframe>
-		
-		<h2>Publications</h2>
-		<section class="flexHoriz">
-			<p class="timelineDate">July 2017</p>
-			<p class="timelineItem">Experimental Investigation of Elastomeric Isolation Bearings with Flexible Supporting Columns</br><i>Journal of Structural Engineering</i></p>
-		</section>
-		<section class="flexHoriz">
-			<p class="timelineDate">January 2017</p>
-			<p class="timelineItem">Increased Substructure Felxibility of Column-Top Isolation Systems</br><i>16th World Conference on Earthquake Engineering</i></p>
-		</section>
-		<section class="flexHoriz">
-			<p class="timelineDate">June 2016</p>
-			<p class="timelineItem">Effects of Non-Traditional Isolator Placement for Seismic Retrofit</br><i>Canadian Society for Civil Engineering Annual Conference</i></p>
-		</section>
-		<section class="flexHoriz">
-			<p class="timelineDate">July 2015</p>
-			<p class="timelineItem">Preliminary Study on the Behaviour of a Column-Top Isolation System</br><i>11th Canadian Conference on Earthquake Engineering</i></p>
-		</section>
-	</section>
-  </article>
-  
-  
-  
-  <article id="personal" class="flexVert">
-	<header>
-		<h1>Personal Projects</h1>
-	</header>
-	
-	
-	<section class="maxWidth">
-		<p>Core Designer</p>
-		<p>ETABS Results Processor Plugin</p>
-		<p>SAFE Transfer Builder</p>
-		<p>Live Wireless Acceleration</p>
-	</section>
-  </article>
-  
-  
-	<footer>
-		<p>&copy; Copyright <script>document.write(new Date().getFullYear())</script> by Adrian Crowder</p>
-	</footer>
+  <footer>
+    <p>&copy; Copyright <script>document.write(new Date().getFullYear())</script> by Adrian Crowder</p>
+  </footer>
   
 </body>
 </html>

@@ -69,12 +69,11 @@ nav a:hover {
 
 
 #topBar {
-	flex: 1 1 50px;
-    flex: 0 0 auto;
 	align-items: stretch;
 	justify-content: space-between;
 	background-color: #2B2B2B;
     position: fixed;
+    height: 4.5em;
     top: 0;
 }
 #topBar h1 {
@@ -82,6 +81,11 @@ nav a:hover {
 }
 #topBar nav {
     padding-right: 1em;
+}
+
+#mainContent {
+    margin-top: 4.5em;
+    width: 100%;
 }
 
 article {
@@ -97,7 +101,7 @@ header {
 	align-items: center;
 	background-color: #2B2B2B;
     color: #D5D5D5;
-	flex: 0 0 100px;
+	flex: 0 0 6em;
 	width: 100%;
 }
 
